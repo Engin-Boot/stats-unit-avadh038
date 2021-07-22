@@ -3,11 +3,7 @@ namespace Statistics
 {
     public class EmailAlert:IAlerter
     {
-        public bool emailSent;
-        public EmailAlert()
-        {
-            emailSent = false;
-        }
+        public bool emailSent = false;
         public void done()
         {
             emailSent = true;

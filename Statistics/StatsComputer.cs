@@ -13,7 +13,7 @@ namespace Statistics
                 return model;
             model.max = numbers[0];
             model.min = numbers[0];
-            double average = 0;
+            model.average = 0;
             foreach (float number in numbers)
             {
                 if (number > model.max)
@@ -22,7 +22,7 @@ namespace Statistics
                     model.min = number;
                 model.average += number;
             }
-            average /= numbers.Count;
+            model.average /= numbers.Count;
             return model;
 
         }
